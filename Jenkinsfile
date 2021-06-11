@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/auke-n/spring-petclinic'
+        git url: 'https://github.com/auke-n/spring-petclinic'
       }
     }
     stage('Building image') {
